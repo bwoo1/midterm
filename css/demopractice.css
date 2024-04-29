@@ -1,0 +1,87 @@
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  background: white;
+  font-family:sans-serif;
+  margin-top: 7%; /*this is like a work-around for clearing the nav floats, by putting a top margin in the body the margin buffers the text so it doesn't start out under the nav bar*/
+}
+nav{
+  position:fixed; /*fixes nav position */
+  left:0; 
+  top: 0;
+  right:0; /*these make the nav bar all the way up to the top, up to the left, and to the right */
+  background: white; /*helps make nav bar look cleared w/o actually clearing */
+  padding:0 2 em; /*this padding is 0 at bottom and 2 em on either side*/
+  border-bottom: 1px solid black; /* creates line at the top separating everything scrolling underneath */
+}
+nav img{
+  width: 20%;
+  float: left; /*floats image to the left (logo) and we need to clear float*/
+}
+nav ul {
+  float: right;
+  margin-top: 3%;
+}
+nav ul li{
+  display: inline; /*list items are block level items, so will not be in a row, so need to change and display inline*/
+}
+.main-container{
+  max-width: 1440px; /*max amount of width of container, even if viewport is larger, width will stop increasing at this point, min width does the opposite */
+  padding: 2em 3em; /*this means 2 em top and bottom, 3 em L & R*/
+  box-shadow: /*offset x, offset y, blur value, and color*/ 10px 10px 5 px #888;
+  /*to background color the entire section though we need to clear, because container only has floated items so it re-sized, this is done through overflow:auto*/
+  overflow: auto;
+}
+.main-container aside, .main container main{
+  float: left;
+}
+aside{
+  width: 35%;
+}
+aside section{
+  background-color: #f4f4f4;
+  box-shadow: 3px 4px 7 px #888888;
+  padding: 10px;
+  margin: 0 25px 25px 0; 
+}
+main {
+  width: 55%;
+}
+main article img.hero{
+  width: 100%;
+}
+/* the above section is helping float the two sections in the main, and make them appear side by side*/
+.imageGroup{
+  display: flex;
+  justify-content: space-between;
+} /* image Group is the parent of the divs with the images inside of them */
+.imageGroup div {
+  width: 30%; /*targets divs inside the imageGroup parent, adjusting width so it moves with viewport*/
+}
+.imageGroup div img {
+  width: 100%; /*this targets the images inside the divs in imageGroup, and tells the image to be 100% of the div space so they resize with the viewport */
+}
+article h2{
+  background: gray;
+  color: #000;
+  padding: 3px;
+  text-align: center;
+  text-transform: uppercase;
+}
+article p a {
+  display:block;
+  color: #fff;
+  background-color: blueviolet;
+  text-align: center;
+  padding: 10px; /*makes the links block, so that the clickable space extends across the block/screen, not just the length of the words*/
+}
+footer{
+  color:#fff;
+  background: #003556;
+  padding: 3px;
+  text-align: center;
+}
+
+/* can use google fonts to get links to embed a font into a css file*/

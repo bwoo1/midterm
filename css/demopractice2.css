@@ -1,0 +1,6 @@
+/*to use Google Fonts need to copy and paste the link href "..." into the head of the html DOM, and then use the language in the CSS file */
+element.style{
+margin-left auto;
+margin-right:auto;
+position: relative; /*a different absolute position element will go ontop of image, and this one will move */
+}

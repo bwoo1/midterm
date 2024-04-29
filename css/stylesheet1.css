@@ -1,0 +1,130 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+nav{
+  position:fixed;
+  left:0; 
+  top: 0;
+  right:0;
+  background: white;
+  border-bottom: 2px solid #503530;
+}
+nav img{
+  float: left;
+  width:15%;
+  height:100%;
+}
+nav ul{
+  float: right;
+  display: flex;
+  justify-content: space-around;
+  padding-right:1%;
+  width: 70%;
+  height: 100%;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 4em;
+  font-size: 2em;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  width:100%;
+  align-content: center;
+  text-align: center;
+}
+a{
+  color: rgb(64, 58, 58);
+  text-decoration: none;
+  display:block;
+  text-align: center;
+}
+#LOGINBUTTON{
+  background-color: #a36670;
+  border-radius: 10px;
+  height:100%;
+}
+#LOGINTEXT{
+  color: white;
+}
+body{
+  margin-top: 10%;
+  overflow: auto;
+}
+#INTRO {
+  display: flex;
+  flex-direction: column;
+}
+div h1{
+  float: center;
+  padding-left: 25%;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  font-size: 5em;
+  width: 50%;
+  text-align: center;
+}
+div h3{
+  display: flex;
+  justify-content: center;
+  font-size: 3em;
+  text-align: center;
+}
+#JOINBUTTON{
+  background-color: #a36670;
+  line-height: 2em;
+  height: 2em;
+  color: white;
+  text-align: center;
+  width:30%;
+  border-radius: 10px;
+}
+#Images{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 5%;
+  overflow: auto;
+}
+#Images div.left{
+  width: 30%;
+}
+#Images div.right{
+  width: 30%;
+}
+span{
+  display: flex;
+  justify-content: center;
+}
+section{
+ display:flex;
+ margin-top: 3%;
+}
+section h2{
+  display: inline-block;
+  width: 30%;
+  line-height: 100%;
+  font-size: 3em;
+  align-content: center;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-left: 2%;
+}
+section p{
+  width: 60%;
+  font-size: 1.5em;
+  line-height: 1.7em;
+  margin-left: 2%;
+  padding: 2%;
+}
+#PURPOSE{
+  background-color: #ede8ea;
+}
+#PLATFORM{
+  background-color: #a36670;
+  color:aliceblue;
+}
+footer{
+  text-align: center;
+  margin-top: 3%;
+  background-color: #503530;
+  color:aliceblue;
+}
